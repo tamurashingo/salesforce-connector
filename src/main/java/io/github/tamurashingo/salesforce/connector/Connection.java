@@ -1,12 +1,20 @@
 package io.github.tamurashingo.salesforce.connector;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Connection {
 
+    @JsonProperty("access_token")
     private String accessToken;
+    @JsonProperty("instance_url")
     private String instanceUrl;
+    @JsonProperty("id")
     private String id;
+    @JsonProperty("token_type")
     private String tokenType;
+    @JsonProperty("issued_at")
     private String issuedAt;
+    @JsonProperty("signature")
     private String signature;
 
     public void setAccessToken(String accessToken) {
