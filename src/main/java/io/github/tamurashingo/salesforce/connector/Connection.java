@@ -2,19 +2,34 @@ package io.github.tamurashingo.salesforce.connector;
 
 public class Connection {
 
-    private final String accessToken;
-    private final String instanceUrl;
-    private final String id;
-    private final String tokenType;
-    private final String issuedAt;
-    private final String signature;
+    private String accessToken;
+    private String instanceUrl;
+    private String id;
+    private String tokenType;
+    private String issuedAt;
+    private String signature;
 
-    public Connection(String accessToken, String instanceUrl, String id, String tokenType, String issuedAt, String signature) {
+    public void setAccessToken(String accessToken) {
         this.accessToken = accessToken;
+    }
+
+    public void setInstanceUrl(String instanceUrl) {
         this.instanceUrl = instanceUrl;
+    }
+
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public void setTokenType(String tokenType) {
         this.tokenType = tokenType;
+    }
+
+    public void setIssuedAt(String issuedAt) {
         this.issuedAt = issuedAt;
+    }
+
+    public void setSignature(String signature) {
         this.signature = signature;
     }
 
